@@ -36,3 +36,4 @@ References
 - [Node.js production deployment with Nginx, Varnish, Upstart and Monit](http://blog.dealspotapp.com/post/40184153657/node-js-production-deployment-with-nginx-varnish)
 - [Install Node.js and Express.js with Nginx on Debian Lenny](http://www.freshblurbs.com/blog/2011/05/07/install-node-js-and-express-js-nginx-debian-lenny.html)
 - [Installing Express for Node.JS on Ubuntu 12.04](http://www.rubynginx.com/index.php/2012/10/02/installing-express-for-node-js-on-ubuntu-12-04/)
+- [GitHub Gist for inslatting Nodejs, Nginx, MongoDB and Redis](https://gist.github.com/natestarner/1998987)
