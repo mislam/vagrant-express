@@ -32,11 +32,6 @@ ln -s /var/log/nginx /etc/nginx/logs
 # Configure default site using server.conf
 mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 ln -s /vagrant/system/nginx/server.conf /etc/nginx/sites-available/default
-ln -s /vagrant /srv/site
-
-# Turn sendfile off for Nginx to prevent caching bug in VirtualBox
-# Leave it on for production though.
-sed -i "s/sendfile\s*on/sendfile off/g" /etc/nginx/nginx.conf
 
 # Create upstart job for Node.js app and Nginx
 cp /vagrant/system/upstart/app.conf /etc/init/app.conf
