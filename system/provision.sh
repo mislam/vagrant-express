@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
 
+# Update
 apt-get update
+
+# Set timezone and install NTP
+echo "America/New_York" > /etc/timezone
+dpkg-reconfigure -f noninteractive tzdata
+apt-get install -y ntp
+
+# Install build tools
 apt-get install -y build-essential
+
+# Add the repositories to install the latest version of nginx
+apt-get install -y python-software-properties
+add-apt-repository -y ppa:nginx/stable
+apt-get update
 
 # Download and install pre-compiled NodeJS v0.10.24
 cd /tmp && wget http://archive.cdn.demoz.co/node-v0.10.24-linux-x64.tar.gz && tar -xzvf node*.tar.gz && cd node && make install
