@@ -40,7 +40,7 @@ ln -s /vagrant/system/nginx/cross-domain-fonts.conf /etc/nginx/conf/cross-domain
 ln -s /vagrant/system/nginx/protect-system-files.conf /etc/nginx/conf/protect-system-files.conf
 
 # Symlink to the proper log directory
-ln -s /var/log/nginx /etc/nginx/logs
+ln -s /var/log/nginx /usr/share/nginx/logs
 
 # Configure default site using server.conf
 mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
